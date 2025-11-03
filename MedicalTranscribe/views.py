@@ -104,7 +104,6 @@ class AudioListView(generics.ListAPIView):
         return Response(serializer.data)
 
 
-
 class TranscriptionStatusView(APIView):
     """
     Fetch AWS Transcribe Medical job status and update DB if completed.
@@ -148,7 +147,6 @@ class TranscriptionStatusView(APIView):
                 # Handle HTTPS or S3 URI formats
                 if transcript_uri.startswith("https://"):
                     # Example:
-                    # https://s3.us-east-1.amazonaws.com/doctus-transcribe-education/medical/medical_transcription_abc.json
                     parsed = urlparse(transcript_uri)
                     bucket_name = parsed.path.strip("/").split("/")[0]
                     # If path is `/doctus-transcribe-education/...`, fix it

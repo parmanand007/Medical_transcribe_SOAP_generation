@@ -1,7 +1,4 @@
 import boto3
-import json
-import time
-from django.utils import timezone
 from celery import shared_task
 from django.conf import settings
 
