@@ -1,0 +1,14 @@
+
+boto3
+botocore
+django-redis==5.4.0
+redis==5.0.1
+requests
+python-dotenv
+psycopg2-binary
+django-celery-beat==2.7.0
+celery==5.3.5
+django-celery-results==2.5.1
+django==5.0.3
+djangorestframework==3.14.0
+django-filter==25.1
